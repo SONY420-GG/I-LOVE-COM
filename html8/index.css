@@ -1,0 +1,150 @@
+/* ตั้งค่าเริ่มต้นสำหรับฟอนต์และพื้นหลัง */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ภาชนะหลักของแอป */
+.app-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+/* ส่วนหัวของแอป (สามารถซ่อนได้ถ้าไม่ต้องการ) */
+.header {
+    display: none; /* ซ่อนไว้เพื่อความเรียบง่าย */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.main-content {
+    padding: 0 20px;
+    padding-bottom: 90px; /* เว้นที่ว่างสำหรับปุ่มด้านล่าง */
+}
+
+/* ส่วนรูปภาพสินค้า */
+.com-image-container {
+    width: 100%;
+    height: 250px;
+    margin: 0 -20px;
+    border-radius: 25px 25px 0 0;
+    overflow: hidden;
+}
+
+.com-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* รายละเอียดสินค้า */
+.com-details {
+    padding-top: 20px;
+}
+
+.com-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.com-category {
+    color: #999;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* ส่วนควบคุมจำนวนและราคา */
+.quantity-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.quantity-btn {
+    background-color: #d11f9e;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* ส่วนตัวเลือกสินค้า (ซอส) */
+.options-section {
+    margin-top: 30px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.option-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.option-item.selected {
+    border-color: #1bd334;
+    background-color: #e8f5e9;
+}
+
+/* ปุ่ม Add to Cart ด้านล่างสุด */
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    border-right: 10px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    border-right: 10px;
+    background-color: #af4c90;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.4);
+}
